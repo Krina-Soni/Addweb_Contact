@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression suite">
+    <test verbose="2" name="ContactTesting">
+        <classes>
+            <class name="Com.Addweb.Reports.ReportClass"/>
+            <class name="Com.Addweb.Testcase.Contact"/>
+        </classes>
+    </test>
+</suite>
