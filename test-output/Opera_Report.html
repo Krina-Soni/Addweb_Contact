@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Feb 21, 2020 12:38:57 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Feb 21, 2020 10:31:45 PM</span>
 				</a>
 			</li>
 			<li>
@@ -71,10 +71,7 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-						<li status='error'><a href='#!'>Error <i class='material-icons red-text lighten-2'>error</i></a></li>
-					<li class='divider'></li>
+										<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
 			</div>
@@ -124,28 +121,14 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>4</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
 		
-		<div class='col s12 m6 l6 np-h'>
-			<div class='card-panel nm-v'>
-				<div class='left panel-name'>Steps</div>
-				<div class='chart-box'>
-					<canvas id='child-analysis' width='100' height='80'></canvas>
-				</div>
-				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='1.667%'><span class='strong'>1</span> step(s) passed</span>
-				</div>
-				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='3.333%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='95%'>57</span> others
-				</div>
-			</div>
-		</div>
 		
 	</div>
 </div>
@@ -157,516 +140,18 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Check if form submitted with captcha Error or not</span>
-						<span class='test-time'>Feb 21, 2020 12:39:07 PM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Feb 21, 2020 12:39:07 PM</span>
-	<span class='label end-time'>Feb 21, 2020 12:39:20 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+49ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:08 PM</td>
-					<td class='step-details'>Sucessfully clicked on object : name</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:09 PM</td>
-					<td class='step-details'>Succesfully entered 'johnny harper' in object :name</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:09 PM</td>
-					<td class='step-details'>Sucessfully clicked on object : email</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:10 PM</td>
-					<td class='step-details'>Succesfully entered 'johnnyharpertesting2@gmail.com' in object :email</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:10 PM</td>
-					<td class='step-details'>Sucessfully clicked on object : phone</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:10 PM</td>
-					<td class='step-details'>Succesfully entered '7854712536' in object :phone</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:11 PM</td>
-					<td class='step-details'>Sucessfully clicked on object : description</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:11 PM</td>
-					<td class='step-details'>Succesfully entered 'Testing for captcha' in object :description</td>
-				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>12:39:18 PM</td>
-					<td class='step-details'>no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="edit-submit"]"}
-  (Session info: chrome=80.0.3987.116)
-  (Driver info: chromedriver=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 17 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'Aanals-Mac.local', ip: '192.168.1.63', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '13.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:59288}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir=/var/folders/_w/8zwk90fn5nq3wnmd1q5hgy780000gp/T/.com.google.Chrome.waqu9u}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=80.0.3987.116, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 339ec45c01c221b8187178bfe66de684
-*** Element info: {Using=xpath, value=//*[@id="edit-submit"]}</td>
-				</tr>
-				<tr class='log' status='error'>
-					<td class='status error' title='error' alt='error'><i class='material-icons'>error</i></td>
-					<td class='timestamp'>12:39:20 PM</td>
-					<td class='step-details'>Error in performing action</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/addweb/IdeaProjects/Addweb_Contact/test-output/screenshot/Verification for Captcha_2020_02_21_12_02_494.png' width='10%' src='/Users/addweb/IdeaProjects/Addweb_Contact/test-output/screenshot/Verification for Captcha_2020_02_21_12_02_494.png' data-src='/Users/addweb/IdeaProjects/Addweb_Contact/test-output/screenshot/Verification for Captcha_2020_02_21_12_02_494.png'></li>
-							</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
-					<div class='test-heading'>
-						<span class='test-name'>Check Form submission with Invalid Email</span>
-						<span class='test-time'>Feb 21, 2020 12:39:33 PM</span>
+						<span class='test-name'>Check weather mailgun is able to send email or not</span>
+						<span class='test-time'>Feb 21, 2020 10:31:47 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 21, 2020 12:39:33 PM</span>
-	<span class='label end-time'>Feb 21, 2020 12:39:39 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+466ms</span>
+	<span class='label start-time'>Feb 21, 2020 10:31:47 PM</span>
+	<span class='label end-time'>Feb 21, 2020 10:31:47 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:35 PM</td>
-					<td class='step-details'>Sucessfully clicked on object : name</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:35 PM</td>
-					<td class='step-details'>Succesfully entered 'Johnny' in object :name</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:36 PM</td>
-					<td class='step-details'>Succesfully entered 'Johnnyharpertesting1' in object :email</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:36 PM</td>
-					<td class='step-details'>Sucessfully clicked on object : phone</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:37 PM</td>
-					<td class='step-details'>Succesfully entered '9978123516' in object :phone</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:37 PM</td>
-					<td class='step-details'>Sucessfully clicked on object : description</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:38 PM</td>
-					<td class='step-details'>Succesfully entered 'Testing by QA team' in object :description</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:38 PM</td>
-					<td class='step-details'>Sucessfully clicked on object : op</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:38 PM</td>
-					<td class='step-details'>Field has Invalid Data: please enter your email address</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:39 PM</td>
-					<td class='step-details'>Field has Invalid Data: please enter your email address</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/addweb/IdeaProjects/Addweb_Contact/test-output/screenshot/Contact Form with Invalid Field entries_2020_02_21_12_02_200.png' width='10%' src='/Users/addweb/IdeaProjects/Addweb_Contact/test-output/screenshot/Contact Form with Invalid Field entries_2020_02_21_12_02_200.png' data-src='/Users/addweb/IdeaProjects/Addweb_Contact/test-output/screenshot/Contact Form with Invalid Field entries_2020_02_21_12_02_200.png'></li>
-							</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
-					<div class='test-heading'>
-						<span class='test-name'>Check Form submission with Blank Description</span>
-						<span class='test-time'>Feb 21, 2020 12:39:50 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Feb 21, 2020 12:39:50 PM</span>
-	<span class='label end-time'>Feb 21, 2020 12:39:55 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+993ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:51 PM</td>
-					<td class='step-details'>Sucessfully clicked on object : name</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:52 PM</td>
-					<td class='step-details'>Succesfully entered 'Johnny' in object :name</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:53 PM</td>
-					<td class='step-details'>Succesfully entered 'Johnnyharpertesting1@gmail.com' in object :email</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:53 PM</td>
-					<td class='step-details'>Sucessfully clicked on object : phone</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:53 PM</td>
-					<td class='step-details'>Succesfully entered '9978123516' in object :phone</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:53 PM</td>
-					<td class='step-details'>Sucessfully clicked on object : description</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:54 PM</td>
-					<td class='step-details'>Succesfully entered '' in object :description</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:54 PM</td>
-					<td class='step-details'>Sucessfully clicked on object : op</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:55 PM</td>
-					<td class='step-details'>Field has Invalid Data: please fill this field</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:39:55 PM</td>
-					<td class='step-details'>Field has Invalid Data: please fill this field</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/addweb/IdeaProjects/Addweb_Contact/test-output/screenshot/Contact Form with Invalid Field entries_2020_02_21_12_02_649.png' width='10%' src='/Users/addweb/IdeaProjects/Addweb_Contact/test-output/screenshot/Contact Form with Invalid Field entries_2020_02_21_12_02_649.png' data-src='/Users/addweb/IdeaProjects/Addweb_Contact/test-output/screenshot/Contact Form with Invalid Field entries_2020_02_21_12_02_649.png'></li>
-							</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
-					<div class='test-heading'>
-						<span class='test-name'>Check Form submission with Name Blank Field</span>
-						<span class='test-time'>Feb 21, 2020 12:40:07 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Feb 21, 2020 12:40:07 PM</span>
-	<span class='label end-time'>Feb 21, 2020 12:40:12 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+161ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:08 PM</td>
-					<td class='step-details'>Sucessfully clicked on object : name</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:09 PM</td>
-					<td class='step-details'>Succesfully entered '' in object :name</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:10 PM</td>
-					<td class='step-details'>Succesfully entered 'Johnnyharpertesting1@gmail.com' in object :email</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:10 PM</td>
-					<td class='step-details'>Sucessfully clicked on object : phone</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:10 PM</td>
-					<td class='step-details'>Succesfully entered '9978123516' in object :phone</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:10 PM</td>
-					<td class='step-details'>Sucessfully clicked on object : description</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:11 PM</td>
-					<td class='step-details'>Succesfully entered 'Testing by QA team' in object :description</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:11 PM</td>
-					<td class='step-details'>Sucessfully clicked on object : op</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:12 PM</td>
-					<td class='step-details'>Field has Invalid Data: please enter your name</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:12 PM</td>
-					<td class='step-details'>Field has Invalid Data: please enter your name</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/addweb/IdeaProjects/Addweb_Contact/test-output/screenshot/Contact Form with Invalid Field entries_2020_02_21_12_02_812.png' width='10%' src='/Users/addweb/IdeaProjects/Addweb_Contact/test-output/screenshot/Contact Form with Invalid Field entries_2020_02_21_12_02_812.png' data-src='/Users/addweb/IdeaProjects/Addweb_Contact/test-output/screenshot/Contact Form with Invalid Field entries_2020_02_21_12_02_812.png'></li>
-							</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
-					<div class='test-heading'>
-						<span class='test-name'>Check Form submission with Blank blank Phone number</span>
-						<span class='test-time'>Feb 21, 2020 12:40:24 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Feb 21, 2020 12:40:24 PM</span>
-	<span class='label end-time'>Feb 21, 2020 12:40:31 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+172ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:25 PM</td>
-					<td class='step-details'>Sucessfully clicked on object : name</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:26 PM</td>
-					<td class='step-details'>Succesfully entered 'Johnny' in object :name</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:27 PM</td>
-					<td class='step-details'>Succesfully entered 'Johnnyharpertesting1@gmail.com' in object :email</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:27 PM</td>
-					<td class='step-details'>Sucessfully clicked on object : phone</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:27 PM</td>
-					<td class='step-details'>Succesfully entered '' in object :phone</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:28 PM</td>
-					<td class='step-details'>Sucessfully clicked on object : description</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:28 PM</td>
-					<td class='step-details'>Succesfully entered 'Testing by QA team' in object :description</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:29 PM</td>
-					<td class='step-details'>Sucessfully clicked on object : op</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:30 PM</td>
-					<td class='step-details'>Field has Invalid Data: please enter your phone number</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:31 PM</td>
-					<td class='step-details'>Field has Invalid Data: please enter your phone number</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/addweb/IdeaProjects/Addweb_Contact/test-output/screenshot/Contact Form with Invalid Field entries_2020_02_21_12_02_134.png' width='10%' src='/Users/addweb/IdeaProjects/Addweb_Contact/test-output/screenshot/Contact Form with Invalid Field entries_2020_02_21_12_02_134.png' data-src='/Users/addweb/IdeaProjects/Addweb_Contact/test-output/screenshot/Contact Form with Invalid Field entries_2020_02_21_12_02_134.png'></li>
-							</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='6'>
-					<div class='test-heading'>
-						<span class='test-name'>Check if form submition works properly or not</span>
-						<span class='test-time'>Feb 21, 2020 12:40:42 PM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Feb 21, 2020 12:40:42 PM</span>
-	<span class='label end-time'>Feb 21, 2020 12:40:55 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+673ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:43 PM</td>
-					<td class='step-details'>Sucessfully clicked on object : name</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:44 PM</td>
-					<td class='step-details'>Succesfully entered 'johnny harper' in object :name</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:44 PM</td>
-					<td class='step-details'>Sucessfully clicked on object : email</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:45 PM</td>
-					<td class='step-details'>Succesfully entered 'krina.addweb@gmail.com' in object :email</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:45 PM</td>
-					<td class='step-details'>Sucessfully clicked on object : phone</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:45 PM</td>
-					<td class='step-details'>Succesfully entered '7854712536' in object :phone</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:46 PM</td>
-					<td class='step-details'>Sucessfully clicked on object : description</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>12:40:46 PM</td>
-					<td class='step-details'>Succesfully entered 'Testing for captcha' in object :description</td>
-				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>12:40:55 PM</td>
-					<td class='step-details'>no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="edit-submit"]"}
-  (Session info: chrome=80.0.3987.116)
-  (Driver info: chromedriver=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 16 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'Aanals-Mac.local', ip: '192.168.1.63', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '13.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:59943}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir=/var/folders/_w/8zwk90fn5nq3wnmd1q5hgy780000gp/T/.com.google.Chrome.OJ8d8k}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=80.0.3987.116, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 6e28459e2141021177108adf7b6b70ce
-*** Element info: {Using=xpath, value=//*[@id="edit-submit"]}</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:40:55 PM</td>
-					<td class='step-details'>Expected value 'Thank you!' matches with actual value 'Thank you!' for the object : null</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/addweb/IdeaProjects/Addweb_Contact/test-output/screenshot/Check Information_2020_02_21_12_02_618.png' width='10%' src='/Users/addweb/IdeaProjects/Addweb_Contact/test-output/screenshot/Check Information_2020_02_21_12_02_618.png' data-src='/Users/addweb/IdeaProjects/Addweb_Contact/test-output/screenshot/Check Information_2020_02_21_12_02_618.png'></li>
-								<li><img data-featherlight='/Users/addweb/IdeaProjects/Addweb_Contact/test-output/screenshot/Thanks for Submission_2020_02_21_12_02_560.png' width='10%' src='/Users/addweb/IdeaProjects/Addweb_Contact/test-output/screenshot/Thanks for Submission_2020_02_21_12_02_560.png' data-src='/Users/addweb/IdeaProjects/Addweb_Contact/test-output/screenshot/Thanks for Submission_2020_02_21_12_02_560.png'></li>
-								<li><img data-featherlight='/Users/addweb/IdeaProjects/Addweb_Contact/test-output/screenshot/Thanks for Submission_2020_02_21_12_02_587.png' width='10%' src='/Users/addweb/IdeaProjects/Addweb_Contact/test-output/screenshot/Thanks for Submission_2020_02_21_12_02_587.png' data-src='/Users/addweb/IdeaProjects/Addweb_Contact/test-output/screenshot/Thanks for Submission_2020_02_21_12_02_587.png'></li>
-							</ul>
 					</div>
 				</li>
 			</ul>
@@ -704,31 +189,31 @@ Session ID: 6e28459e2141021177108adf7b6b70ce
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>6</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>60</div>
+					<div class='panel-lead'>0</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 21, 2020 12:38:57 PM</div>
+					<div class='panel-lead'>Feb 21, 2020 10:31:45 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 21, 2020 12:41:22 PM</div>
+			 		<div class='panel-lead'>Feb 21, 2020 10:31:49 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 2m 25s+391ms</div>
+					<div class='panel-lead'>0h 0m 3s+830ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -765,22 +250,22 @@ Session ID: 6e28459e2141021177108adf7b6b70ce
 
 		<script>
 			var statusGroup = {
-				passParent: 4,
-				failParent: 2,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 2,
+				exceptionsParent: 0,
 				
-				passChild: 1,
-				failChild: 2,
+				passChild: 0,
+				failChild: 0,
 				fatalChild: 0,
-				errorChild: 1,
+				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 56,
-				exceptionsChild: 3,
+				infoChild: 0,
+				exceptionsChild: 0,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

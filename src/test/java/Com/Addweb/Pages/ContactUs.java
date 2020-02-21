@@ -2,6 +2,7 @@ package Com.Addweb.Pages;
 import Com.Addweb.Actions.ActionClass;
 import Com.Addweb.Actions.VerificationClass;
 import com.aventstack.extentreports.ExtentTest;
+import com.mashape.unirest.http.exceptions.UnirestException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +10,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-
+import java.io.*;
+import java.net.InetAddress;
+import java.util.Properties;
+import java.util.Date;
+import javax.mail.*;
+import javax.mail.internet.*;
+import com.sun.mail.smtp.*;
 import java.io.IOException;
 
 public class ContactUs {
@@ -148,9 +155,11 @@ public class ContactUs {
         Thread.sleep(10000);
         actionClass.captureScreen("Thanks for Submission");
     }
-    public void Validation()throws IndexOutOfBoundsException,InterruptedException{
+    public void Validation() throws IndexOutOfBoundsException, InterruptedException, UnirestException, IOException {
         ActionClass actionClass=new ActionClass(driver,extentTest);
-        String s = driver.switchTo().activeElement().getAttribute("data-webform-required-error");
-        System.out.println(s);
+//        String s = driver.switchTo().activeElement().getAttribute("data-webform-required-error");
+//        System.out.println(s);
+        //actionClass.sendSimpleMessage();
+        actionClass.sendSimpleMessage();
     }
 }
