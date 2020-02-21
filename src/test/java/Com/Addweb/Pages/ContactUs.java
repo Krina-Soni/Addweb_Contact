@@ -134,9 +134,18 @@ public class ContactUs {
         actionClass.setValueinTextbox(this.PhoneNumber, EnterPhone);
         actionClass.clickOnObject(this.Description);
         actionClass.setValueinTextbox(this.Description, AddDescription);
+        actionClass.captureScreen("Check Information");
         actionClass.clickOnObject(this.SubmitBTN);
         VerificationClass Matchthankyou = new VerificationClass(this.driver,extentTest);
         Matchthankyou.verifyTextPresent(this.Thankyou, "Thank you!");
+        actionClass.captureScreen("Thanks for Submission");
+        driver.get("https://mail.google.com");
+        GmailPageObjects gp = new GmailPageObjects(driver,extentTest);
+        gp.enterEmail("krina.addweb@gmail.com");//Replace with your email id
+        gp.enterPassword("addweb123");//Replace with your password
+        Thread.sleep(10000);
+        gp.clickEmail("Thanks for your enquiry at Addweb Solution");//Replace with email subject you want to click
+        Thread.sleep(10000);
         actionClass.captureScreen("Thanks for Submission");
     }
     public void Validation()throws IndexOutOfBoundsException,InterruptedException{

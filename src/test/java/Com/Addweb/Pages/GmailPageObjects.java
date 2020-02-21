@@ -2,12 +2,15 @@ package Com.Addweb.Pages;
 
 import java.util.List;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -26,11 +29,14 @@ public class GmailPageObjects {
     @FindBy(how=How.XPATH, xpath="//span[@class='gb_bb gbii']")
     WebElement profileLogo;
 
+    public static ExtentTest test;
 
 
-    public GmailPageObjects(WebDriver driver)
+    public GmailPageObjects(WebDriver driver,ExtentTest test)
     {
         this.driver=driver;
+        this.test=test;
+        PageFactory.initElements(driver, this);
     }
 
     public void enterEmail(String emailID)
@@ -55,15 +61,23 @@ public class GmailPageObjects {
         System.out.println("Password entered");
     }
 
-    public void clickEmail(String emailSubject)
-    {
-        waitForVisible(driver, profileLogo);
+    public void clickEmail(String emailSubject) throws InterruptedException {
+//        waitForVisible(driver, profileLogo);
 
         for (int i = 0; i < emailThreads.size(); i++) {
 
             if (emailThreads.get(i).getText().contains(emailSubject)) {
                 emailThreads.get(i).click();
-                System.out.println("email clicked");
+                Thread.sleep(5000);
+                System.out.println("Mail is Received");
+                test.log(Status.INFO,"email is received");
+                break;
+            }
+           else
+            {
+                Thread.sleep(5000);
+                System.out.println("Mail is not received Received");
+                test.log(Status.FAIL,"Email is not Received");
                 break;
             }
         }
@@ -73,7 +87,6 @@ public class GmailPageObjects {
             Thread.sleep(1000);
             System.out.println("Waiting for element visibility");
             WebDriverWait wait = new WebDriverWait(driver, 15);
-            wait.until(ExpectedConditions.visibilityOf(element));
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

@@ -93,6 +93,7 @@ public class ActionClass {
         }
     return null;
     }
+
     public static void captureScreen(String testcaseName) throws IOException {
         DateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd_HH_MM_SS");
         Date date = new Date();

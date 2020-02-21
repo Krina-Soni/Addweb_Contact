@@ -53,17 +53,9 @@ import java.io.IOException;
         public void Successfulsubmission() throws IOException, IOException, InterruptedException {
           logger=extent.createTest("Check if form submition works properly or not");
           ContactUs very=new ContactUs(driver,logger);
-          very.Submittheform("johnny harper","johnnyharpertesting2@gmail.com","7854712536","Testing for captcha");
+          very.Submittheform("johnny harper","krina.addweb@gmail.com","7854712536","Testing for captcha");
           driver.quit();
         }
 
-        @Test
-        public void email() throws IOException, IOException, InterruptedException {
-            driver.get("https://mail.google.com");
-            GmailPageObjects gp= PageFactory.initElements(driver, GmailPageObjects.class);
-            gp.enterEmail("krina.addweb@gmail.com");//Replace with your email id
-            gp.enterPassword("addweb123");//Replace with your password
-            gp.clickEmail("Thanks for your enquiry at Addweb Solution");//Replace with email subject you want to click
-        }
 }
 
